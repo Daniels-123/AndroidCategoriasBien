@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.digitalandroidweb.androidregisterandlogin">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeRegist">
+        <activity android:name=".Login.HomeActivity" />
+        <activity
+            android:name=".Login.LoginActivity"
+            android:theme="@style/AppThemeLogin" />
+        <activity
+            android:name=".PrincipalActivity"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/AppThemeRegist.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ComidasYpostres.ComidasPostresActivity" />
+        <activity android:name=".Dependencias.DependenciasAdministrativas" />
+        <activity android:name=".Dependencias.DependenciasAdministrativasDetail" />
+        <activity
+            android:name=".ComidasYpostres.Bares.BaresActivity"
+            android:parentActivityName=".PrincipalActivity" />
+        <activity android:name=".ComidasYpostres.ComidaChina.ComidaChinaActivity" />
+        <activity android:name=".ComidasYpostres.ComidaInternacional.ComidaInternacionalActivity"></activity>
+
+        <activity android:name=".ComidasYpostres.ComidaRapida.ComidaRapidaActivity" />
+        <activity android:name=".ComidasYpostres.ComidaRapida.ComidaRapidaDetail" />
+
+        <activity android:name=".ComidasYpostres.ComidaTradicional.ComidaTradicionalActivity" />
+        <activity android:name=".ComidasYpostres.ComidaTradicional.ComidaTradicionalDetail" />
+
+        <activity android:name=".ComidasYpostres.ComidaVegetariana.ComidaVegetarianaActivity" />
+        <activity android:name=".ComidasYpostres.ComidaVegetariana.ComidaVegetarianaDetail" />
+
+
+    </application>
+
+
+</manifest>

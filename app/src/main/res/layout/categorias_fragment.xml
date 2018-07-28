@@ -1,0 +1,277 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+
+                android:baselineAligned="false"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="5.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_width="fill_parent" android:layout_height="178dp">
+
+
+                    <Button
+                        android:id="@+id/comi_postres"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/dinnerz1"
+                        android:gravity="bottom|center"
+
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorText2"
+                        android:textSize="18sp" />
+
+
+                    <Button
+                        android:id="@+id/tiendas_ropa"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/hangerz1"
+                        android:gravity="bottom|center"
+
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorText2"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="5.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_width="fill_parent" android:layout_height="178dp">
+
+
+                    <Button
+                        android:id="@+id/tiendas_varias"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/salesz1"
+                        android:gravity="bottom|center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorText2"
+
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/hogar_remodelacion"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/homez1"
+                        android:gravity="bottom|center"
+
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorText2"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="5.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_width="fill_parent" android:layout_height="178dp">
+
+
+                    <Button
+                        android:id="@+id/mascotas_agro"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/petz2"
+                        android:gravity="bottom|center"
+
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorText2"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/salud_belleza"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/saunaz1"
+
+                        android:gravity="bottom|center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorText2"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="5.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_width="fill_parent" android:layout_height="178dp">
+
+
+                    <Button
+                        android:id="@+id/transporte"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/trafficz1"
+                        android:gravity="bottom|center"
+
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorText2"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/mantenimiento"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/supportz1"
+
+                        android:gravity="bottom|center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorText2"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="5.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_width="fill_parent" android:layout_height="178dp">
+
+
+                    <Button
+                        android:id="@+id/servicios"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+
+                        android:layout_weight="1.0"
+                        android:background="@drawable/customerservice1"
+                        android:gravity="bottom|center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorText2"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/turismo"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/trekking1"
+                        android:gravity="bottom|center"
+
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorText2"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="5.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_width="fill_parent" android:layout_height="178dp">
+
+
+                    <Button
+                        android:id="@+id/guia_turistica"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+
+                        android:background="@drawable/guide1"
+                        android:gravity="bottom|center"
+                        android:textColor="@color/colorText2"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/tiendas_calzado"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/running1"
+
+                        android:gravity="bottom|center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorText2"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="5.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_width="fill_parent" android:layout_height="178dp">
+
+
+                    <Button
+                        android:id="@+id/dependencias"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+
+                        android:background="@drawable/route1"
+                        android:gravity="bottom|center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorText2"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/invi"
+                        android:layout_width="0.0dip" android:layout_height="fill_parent"
+                        android:textAllCaps="false"
+                        android:background="?android:selectableItemBackground"
+                        android:layout_weight="1.0" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</RelativeLayout>

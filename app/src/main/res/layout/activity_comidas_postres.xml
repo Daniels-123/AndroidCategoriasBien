@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:baselineAligned="false"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="5.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_width="fill_parent" android:layout_height="178dp">
+
+
+                    <Button
+                        android:id="@+id/bares"
+                        android:layout_width="0.0dip" android:layout_height="fill_parent"
+                        android:text="@string/bares"
+                        android:background="@drawable/beer"
+                        android:textAllCaps="false"
+                        android:layout_weight="1.0" />
+                    <Button
+                        android:id="@+id/comida_china"
+                        android:layout_width="0.0dip" android:layout_height="fill_parent"
+                        android:text="@string/comida_china"
+                        android:background="@drawable/rice"
+                        android:textAllCaps="false"
+                        android:layout_weight="1.0" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="5.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_width="fill_parent" android:layout_height="178dp">
+
+
+
+                    <Button
+                        android:id="@+id/comida_internacional"
+                        android:textAllCaps="false"
+                        android:layout_width="0.0dip" android:layout_height="fill_parent"
+                        android:text="@string/comida_internacional"
+                        android:background="@drawable/taco"
+                        android:layout_weight="1.0" />
+
+                    <Button
+                        android:id="@+id/comida_rapida"
+                        android:layout_width="0.0dip" android:layout_height="fill_parent"
+                        android:text="@string/comida_rapida"
+                        android:textAllCaps="false"
+                        android:background="@drawable/burger"
+                        android:layout_weight="1.0" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="5.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_width="fill_parent" android:layout_height="178dp">
+
+
+
+                    <Button
+                        android:id="@+id/comida_tradicional"
+                        android:layout_width="0.0dip" android:layout_height="fill_parent"
+                        android:text="@string/comida_tradicional"
+                        android:background="@drawable/roastchicken"
+                        android:textAllCaps="false"
+                        android:layout_weight="1.0" />
+
+                    <Button
+                        android:id="@+id/comida_vegetariana"
+                        android:layout_width="0.0dip" android:layout_height="fill_parent"
+
+                        android:background="@drawable/salad16"
+                        android:textAllCaps="false"
+                        android:layout_weight="1.0" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="5.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_width="fill_parent" android:layout_height="178dp">
+
+
+
+                    <Button
+                        android:id="@+id/fruterias"
+                        android:layout_width="0.0dip" android:layout_height="fill_parent"
+                        android:text="@string/fruterias"
+                        android:background="@drawable/fruit"
+                        android:textAllCaps="false"
+                        android:layout_weight="1.0" />
+
+                    <Button
+                        android:id="@+id/postres_helados"
+                        android:layout_width="0.0dip" android:layout_height="fill_parent"
+
+                        android:background="@drawable/icecream3"
+                        android:textAllCaps="false"
+                        android:layout_weight="1.0" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="5.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_width="fill_parent" android:layout_height="178dp">
+
+
+                    <Button
+                        android:id="@+id/invi"
+                        android:layout_width="0.0dip" android:layout_height="fill_parent"
+                        android:textAllCaps="false"
+                        android:background="?android:selectableItemBackground"
+                        android:layout_weight="1.0" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</RelativeLayout>
