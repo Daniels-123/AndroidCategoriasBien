@@ -115,7 +115,7 @@ public class ComidaTradicionalActivity extends AppCompatActivity implements Exam
 
     @Override
     public void onItemClick(int position) {
-        Intent detailIntent = new Intent(this, ComidaTradicionalDetail.class);
+        Intent detailIntent = new Intent(this, DependenciasAdministrativasDetail.class);
         ExampleItem clickeditem =mexampleItems.get(position);
 
 

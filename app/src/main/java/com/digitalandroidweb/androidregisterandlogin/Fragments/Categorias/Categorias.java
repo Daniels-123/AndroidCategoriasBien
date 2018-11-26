@@ -16,6 +16,7 @@ import android.widget.Button;
 import com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.ComidasPostresActivity;
 import com.digitalandroidweb.androidregisterandlogin.Dependencias.DependenciasAdministrativas;
 import com.digitalandroidweb.androidregisterandlogin.R;
+import com.digitalandroidweb.androidregisterandlogin.TiendasRopa.TiendasRopaActivity;
 
 public class Categorias extends Fragment implements NavigationView.OnNavigationItemSelectedListener {
     View myView;
@@ -43,6 +44,14 @@ public class Categorias extends Fragment implements NavigationView.OnNavigationI
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ComidasPostresActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), TiendasRopaActivity.class);
                 startActivity(intent);
             }
         });

@@ -61,8 +61,8 @@ public class LoginActivity extends AppCompatActivity {
                 if (!mEmail.isEmpty() || !mPass.isEmpty()) {
                     Login(mEmail, mPass);
                 } else {
-                    email.setError("Please insert email");
-                    password.setError("Please insert password");
+                    email.setError("Por favor inserte su correo");
+                    password.setError("Por favor inserte su contraseña");
                 }
             }
         });

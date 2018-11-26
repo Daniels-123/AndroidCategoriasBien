@@ -116,7 +116,7 @@ public class ComidaInternacionalActivity extends AppCompatActivity implements Ex
 
     @Override
     public void onItemClick(int position) {
-        Intent detailIntent = new Intent(this, ComidaInternacionalDetail.class);
+        Intent detailIntent = new Intent(this, DependenciasAdministrativasDetail.class);
         ExampleItem clickeditem =mexampleItems.get(position);
 
 

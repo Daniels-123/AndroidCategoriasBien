@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/m"
     tools:context=".ComidasYpostres.Bares.BaresDetail">
+
+
 
     <ImageView
         android:id="@+id/image_view_detail_bares"
@@ -49,7 +52,6 @@
         android:textSize="15sp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"/>
-
 
 
 </LinearLayout>

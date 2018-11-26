@@ -115,7 +115,7 @@ public class ComidaChinaActivity extends AppCompatActivity implements ExampleAda
 
     @Override
     public void onItemClick(int position) {
-        Intent detailIntent = new Intent(this, ComidaChinaDetail.class);
+        Intent detailIntent = new Intent(this, DependenciasAdministrativasDetail.class);
         ExampleItem clickeditem =mexampleItems.get(position);
 
 

@@ -15,51 +15,55 @@
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <EditText
             android:id="@+id/name"
-            android:hint="Name"
-            android:inputType="textPersonName"
-            android:textColor="@color/colorText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorText" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <EditText
             android:id="@+id/email"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/colorText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorText" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:passwordToggleEnabled="true">
+
         <EditText
             android:id="@+id/password"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:textColor="@color/colorText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/colorText" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:passwordToggleEnabled="true">
+
         <EditText
             android:id="@+id/c_password"
-            android:hint="Confrim Password"
-            android:inputType="textPassword"
-            android:textColor="@color/colorText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="Confrimar Contraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/colorText" />
     </android.support.design.widget.TextInputLayout>
 
     <ProgressBar
@@ -71,11 +75,11 @@
 
     <Button
         android:id="@+id/btn_regist"
-        android:backgroundTint="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:text="Register"
-        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
-        android:layout_height="55dp" />
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Registrarse"
+        android:textColor="@android:color/white" />
 
 </LinearLayout>

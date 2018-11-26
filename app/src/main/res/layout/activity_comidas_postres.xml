@@ -18,6 +18,7 @@
                 android:layout_height="match_parent"
                 android:clickable="false"
                 android:baselineAligned="false"
+                android:background="@drawable/m"
                 android:gravity="center_horizontal">
 
                 <LinearLayout
@@ -33,15 +34,15 @@
                     <Button
                         android:id="@+id/bares"
                         android:layout_width="0.0dip" android:layout_height="fill_parent"
-                        android:text="@string/bares"
-                        android:background="@drawable/beer"
+
+                        android:background="@drawable/beerz"
                         android:textAllCaps="false"
                         android:layout_weight="1.0" />
                     <Button
                         android:id="@+id/comida_china"
                         android:layout_width="0.0dip" android:layout_height="fill_parent"
-                        android:text="@string/comida_china"
-                        android:background="@drawable/rice"
+
+                        android:background="@drawable/ricez"
                         android:textAllCaps="false"
                         android:layout_weight="1.0" />
 
@@ -65,16 +66,16 @@
                         android:id="@+id/comida_internacional"
                         android:textAllCaps="false"
                         android:layout_width="0.0dip" android:layout_height="fill_parent"
-                        android:text="@string/comida_internacional"
-                        android:background="@drawable/taco"
+
+                        android:background="@drawable/tacoz"
                         android:layout_weight="1.0" />
 
                     <Button
                         android:id="@+id/comida_rapida"
                         android:layout_width="0.0dip" android:layout_height="fill_parent"
-                        android:text="@string/comida_rapida"
+
                         android:textAllCaps="false"
-                        android:background="@drawable/burger"
+                        android:background="@drawable/burgerz"
                         android:layout_weight="1.0" />
 
 
@@ -94,8 +95,7 @@
                     <Button
                         android:id="@+id/comida_tradicional"
                         android:layout_width="0.0dip" android:layout_height="fill_parent"
-                        android:text="@string/comida_tradicional"
-                        android:background="@drawable/roastchicken"
+                         android:background="@drawable/roastchickenz"
                         android:textAllCaps="false"
                         android:layout_weight="1.0" />
 
@@ -103,7 +103,7 @@
                         android:id="@+id/comida_vegetariana"
                         android:layout_width="0.0dip" android:layout_height="fill_parent"
 
-                        android:background="@drawable/salad16"
+                        android:background="@drawable/saladz"
                         android:textAllCaps="false"
                         android:layout_weight="1.0" />
 
@@ -124,8 +124,8 @@
                     <Button
                         android:id="@+id/fruterias"
                         android:layout_width="0.0dip" android:layout_height="fill_parent"
-                        android:text="@string/fruterias"
-                        android:background="@drawable/fruit"
+
+                        android:background="@drawable/fruitz"
                         android:textAllCaps="false"
                         android:layout_weight="1.0" />
 
@@ -133,7 +133,7 @@
                         android:id="@+id/postres_helados"
                         android:layout_width="0.0dip" android:layout_height="fill_parent"
 
-                        android:background="@drawable/icecream3"
+                        android:background="@drawable/icecreamz"
                         android:textAllCaps="false"
                         android:layout_weight="1.0" />
 

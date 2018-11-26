@@ -12,13 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeRegist">
-        <activity android:name=".Login.HomeActivity" />
+        <activity
+            android:name=".Login.HomeActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Login.LoginActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppThemeLogin" />
         <activity
             android:name=".PrincipalActivity"
             android:label="@string/title_activity_principal"
+            android:screenOrientation="portrait"
             android:theme="@style/AppThemeRegist.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,26 +30,66 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ComidasYpostres.ComidasPostresActivity" />
-        <activity android:name=".Dependencias.DependenciasAdministrativas" />
-        <activity android:name=".Dependencias.DependenciasAdministrativasDetail" />
+        <activity
+            android:name=".ComidasYpostres.ComidasPostresActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dependencias.DependenciasAdministrativas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dependencias.DependenciasAdministrativasDetail"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ComidasYpostres.Bares.BaresActivity"
-            android:parentActivityName=".PrincipalActivity" />
-        <activity android:name=".ComidasYpostres.ComidaChina.ComidaChinaActivity" />
-        <activity android:name=".ComidasYpostres.ComidaInternacional.ComidaInternacionalActivity"></activity>
+            android:parentActivityName=".PrincipalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ComidasYpostres.ComidaChina.ComidaChinaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ComidasYpostres.ComidaInternacional.ComidaInternacionalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ComidasYpostres.ComidaRapida.ComidaRapidaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ComidasYpostres.ComidaRapida.ComidaRapidaDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ComidasYpostres.ComidaTradicional.ComidaTradicionalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ComidasYpostres.ComidaTradicional.ComidaTradicionalDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ComidasYpostres.ComidaVegetariana.ComidaVegetarianaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ComidasYpostres.ComidaVegetariana.ComidaVegetarianaDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ComidasYpostres.Fruterias.FruteriasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ComidasYpostres.Fruterias.FruteriasDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PromocionesFragment.Promociones"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PromocionesFragment.PromocionesDetail"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TiendasRopa.TiendasRopaActivity"
+            android:screenOrientation="portrait" />
 
-        <activity android:name=".ComidasYpostres.ComidaRapida.ComidaRapidaActivity" />
-        <activity android:name=".ComidasYpostres.ComidaRapida.ComidaRapidaDetail" />
+        <activity android:name=".TiendasRopa.Bebes.BebesActivity"
+            android:screenOrientation="portrait" />
 
-        <activity android:name=".ComidasYpostres.ComidaTradicional.ComidaTradicionalActivity" />
-        <activity android:name=".ComidasYpostres.ComidaTradicional.ComidaTradicionalDetail" />
 
-        <activity android:name=".ComidasYpostres.ComidaVegetariana.ComidaVegetarianaActivity" />
-        <activity android:name=".ComidasYpostres.ComidaVegetariana.ComidaVegetarianaDetail" />
+        <activity android:name=".TiendasRopa.Bebes.BebesDetail"
+            android:screenOrientation="portrait" />
 
 
     </application>
-
 
 </manifest>

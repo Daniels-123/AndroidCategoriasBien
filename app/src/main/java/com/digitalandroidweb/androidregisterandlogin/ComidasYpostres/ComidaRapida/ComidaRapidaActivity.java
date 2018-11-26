@@ -115,7 +115,7 @@ public class ComidaRapidaActivity extends AppCompatActivity implements ExampleAd
 
     @Override
     public void onItemClick(int position) {
-        Intent detailIntent = new Intent(this, ComidaRapidaDetail.class);
+        Intent detailIntent = new Intent(this, DependenciasAdministrativasDetail.class);
         ExampleItem clickeditem =mexampleItems.get(position);
 
 

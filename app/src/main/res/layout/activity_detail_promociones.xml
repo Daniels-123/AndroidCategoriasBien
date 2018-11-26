@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/m"
+    tools:context=".Dependencias.DependenciasAdministrativasDetail">
+
+    <ImageView
+        android:id="@+id/image_view_promo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+
+        <Button
+            android:id="@+id/text_view_telefono_promo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+
+            android:text="Telefono"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/compartir"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+
+            android:text="Compartir"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_view_descrip_promo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripcion"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+    <TextView
+        android:id="@+id/text_view_direccion_promo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Direccion"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+</LinearLayout>

@@ -32,11 +32,11 @@ public class ComidaInternacionalDetail extends AppCompatActivity {
 
         this.setTitle(nombre);
 
-        ImageView imageView = findViewById(R.id.image_view_detail_comida_china);
-        TextView textViewNombre = findViewById(R.id.text_view_nombre_det_comida_china);
-        TextView textViewDesc = findViewById(R.id.text_view_descrip_det_comida_china);
-        TextView textViewDire = findViewById(R.id.text_view_direccion_det_comida_china);
-        TextView textViewTel = findViewById(R.id.text_view_telefono_det_comida_china);
+        ImageView imageView = findViewById(R.id.image_view_detail_comida_internacional);
+        TextView textViewNombre = findViewById(R.id.text_view_nombre_det_comida_internacional);
+        TextView textViewDesc = findViewById(R.id.text_view_descrip_det_comida_internacional);
+        TextView textViewDire = findViewById(R.id.text_view_direccion_det_comida_internacional);
+        TextView textViewTel = findViewById(R.id.text_view_telefono_det_comida_internacional);
 
 
         Picasso.with(this).load(imageUrl).fit().centerInside().into(imageView);

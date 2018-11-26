@@ -1,6 +1,7 @@
 package com.digitalandroidweb.androidregisterandlogin;
 
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -11,7 +12,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.ComidasPostresActivity;
 import com.digitalandroidweb.androidregisterandlogin.Fragments.Categorias.Categorias;
+import com.digitalandroidweb.androidregisterandlogin.PromocionesFragment.Promociones;
 import com.digitalandroidweb.androidregisterandlogin.Session.SessionManager;
 
 public class PrincipalActivity extends AppCompatActivity
@@ -102,6 +105,9 @@ public class PrincipalActivity extends AppCompatActivity
                     .commit();
 
         } else if (id == R.id.nav_gallery) {
+
+            Intent intent = new Intent(PrincipalActivity.this, Promociones.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_slideshow) {
 

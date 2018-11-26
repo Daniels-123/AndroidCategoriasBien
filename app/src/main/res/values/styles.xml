@@ -40,8 +40,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="Theme"></style>
+    <style name="Theme">
 
-    <style name="ThemeOverlay"></style>
+    </style>
+
+    <style name="ThemeOverlay">
+
+    </style>
 
 </resources>

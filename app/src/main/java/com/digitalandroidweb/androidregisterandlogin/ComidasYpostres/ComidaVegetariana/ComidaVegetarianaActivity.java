@@ -16,6 +16,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.digitalandroidweb.androidregisterandlogin.Dependencias.Adaptor.ExampleAdaptor;
 import com.digitalandroidweb.androidregisterandlogin.Dependencias.Adaptor.ExampleItem;
+import com.digitalandroidweb.androidregisterandlogin.Dependencias.DependenciasAdministrativasDetail;
 import com.digitalandroidweb.androidregisterandlogin.R;
 
 import org.json.JSONArray;
@@ -114,7 +115,7 @@ public class ComidaVegetarianaActivity extends AppCompatActivity implements Exam
 
     @Override
     public void onItemClick(int position) {
-        Intent detailIntent = new Intent(this, ComidaVegetarianaDetail.class);
+        Intent detailIntent = new Intent(this, DependenciasAdministrativasDetail.class);
         ExampleItem clickeditem =mexampleItems.get(position);
 
 

@@ -70,13 +70,13 @@ public class RegisterActivity extends AppCompatActivity {
                         String success = jsonObject.getString("success");
 
                         if (success.equals("1")) {
-                            Toast.makeText(RegisterActivity.this, "Register Success!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this, "Se ha registrado con exito!", Toast.LENGTH_SHORT).show();
                         }
 
 
                     } catch (JSONException e) {
                         e.printStackTrace();
-                        Toast.makeText(RegisterActivity.this, "Register Error! " + e.toString(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this, "Se ha producido un error en el registro! " + e.toString(), Toast.LENGTH_SHORT).show();
                         loading.setVisibility(View.GONE);
                         btn_regist.setVisibility(View.VISIBLE);
                     }
