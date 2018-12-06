@@ -1,4 +1,4 @@
-package com.digitalandroidweb.androidregisterandlogin.Dependencias.Adaptor;
+package com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.CrepesPizzeria.Adaptor;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.Bares.Adaptor.ExampleItem;
 import com.digitalandroidweb.androidregisterandlogin.R;
 import com.squareup.picasso.Picasso;
 
@@ -39,7 +40,7 @@ public class ExampleAdaptor extends RecyclerView.Adapter<ExampleAdaptor.ExampleV
     @NonNull
     @Override
     public ExampleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(mContext).inflate(R.layout.example_item, parent, false);
+        View v = LayoutInflater.from(mContext).inflate(R.layout.example_item_crepes_pizzeria, parent, false);
         return new ExampleViewHolder(v);
     }
 
@@ -48,9 +49,6 @@ public class ExampleAdaptor extends RecyclerView.Adapter<ExampleAdaptor.ExampleV
         ExampleItem currentItem = mExampleList.get(position);
 
         String imageUrl = currentItem.getImagen_1();
-        String imageUrl2 = currentItem.getImagen_2();
-        String imageUrl3 = currentItem.getImagen_3();
-
         String nombre = currentItem.getNombre();
         String direccion = currentItem.getDireccion();
         String descripcion = currentItem.getDescripcion();
@@ -60,7 +58,6 @@ public class ExampleAdaptor extends RecyclerView.Adapter<ExampleAdaptor.ExampleV
         holder.mTextViewCreator.setText(nombre);
         holder.mTextViewDescription.setText(descripcion);
         Picasso.with(mContext).load(imageUrl).fit().centerInside().into(holder.mImageView);
-
 
     }
 
@@ -77,9 +74,9 @@ public class ExampleAdaptor extends RecyclerView.Adapter<ExampleAdaptor.ExampleV
 
         public ExampleViewHolder(View itemView) {
             super(itemView);
-            mImageView = itemView.findViewById(R.id.image_view);
-            mTextViewCreator = itemView.findViewById(R.id.text_view_creator);
-            mTextViewDescription= itemView.findViewById(R.id.text_view_description);
+            mImageView = itemView.findViewById(R.id.image_view_crepes_pizzeria);
+            mTextViewCreator = itemView.findViewById(R.id.text_view_creator_crepes_pizzeria);
+            mTextViewDescription= itemView.findViewById(R.id.text_view_description_crepes_pizzeria);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

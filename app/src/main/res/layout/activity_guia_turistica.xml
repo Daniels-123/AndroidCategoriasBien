@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context="com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.ComidaVegetariana.ComidaVegetarianaActivity">
+    android:background="@drawable/m"
+    tools:context="com.digitalandroidweb.androidregisterandlogin.GuiaTuristica.GuiaTuristica">
 
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_view_comida_vegetariana"
+        android:id="@+id/recycler_view_guia_turistica"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:backgroundTint="@color/primario"
         android:background="@android:color/darker_gray">
 
     </android.support.v7.widget.RecyclerView>

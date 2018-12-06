@@ -1,9 +1,9 @@
-package com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.ComidaInternacional;
+package com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.CrepesPizzeria;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ProgressBar;
@@ -14,7 +14,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.ComidaChina.ComidaChinaActivity;
 import com.digitalandroidweb.androidregisterandlogin.Dependencias.Adaptor.ExampleAdaptor;
 import com.digitalandroidweb.androidregisterandlogin.Dependencias.Adaptor.ExampleItem;
 import com.digitalandroidweb.androidregisterandlogin.Dependencias.DependenciasAdministrativasDetail;
@@ -29,7 +28,7 @@ import java.util.ArrayList;
 import static com.digitalandroidweb.androidregisterandlogin.Dependencias.DependenciasAdministrativas.EXTRA_URL2;
 import static com.digitalandroidweb.androidregisterandlogin.Dependencias.DependenciasAdministrativas.EXTRA_URL3;
 
-public class ComidaInternacionalActivity extends AppCompatActivity implements ExampleAdaptor.OnItemClickListener {
+public class CrepesPizzeriaActivity extends AppCompatActivity implements ExampleAdaptor.OnItemClickListener {
     public static final String EXTRA_URL = "Imagen_1";
     public static final String EXTRA_NOMBRE = "Nombre";
     public static final String EXTRA_DESCRIPTION = "Description";
@@ -48,10 +47,10 @@ public class ComidaInternacionalActivity extends AppCompatActivity implements Ex
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_comida_internacional);
+        setContentView(R.layout.activity_crepes_pizzeria);
         setupActionBar();
-        this.setTitle(R.string.comida_internacional);
-        mRecyclerView = findViewById(R.id.recycler_view_comida_internacional);
+        this.setTitle(R.string.pizzerias);
+        mRecyclerView = findViewById(R.id.recycler_view_crepes_pizzeria);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -74,7 +73,7 @@ public class ComidaInternacionalActivity extends AppCompatActivity implements Ex
 
     private void parseJSON() {
 
-        String url = "http://digitalandroidservices.com/api/categorias/cat_1/gourmet_internacional.php";
+        String url = "http://openfirespark.000webhostapp.com/pruebassql/categorias/cat_1/comida_vegetariana.php";
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
@@ -90,7 +89,6 @@ public class ComidaInternacionalActivity extends AppCompatActivity implements Ex
                                 String imageurl = hit.getString("Imagen_1");
                                 String imageurl2 = hit.getString("Imagen_2");
                                 String imageurl3 = hit.getString("Imagen_3");
-
                                 String description = hit.getString("Descripcion");
                                 String direccion= hit.getString("Direccion");
                                 String telefono = hit.getString("Telefono");
@@ -100,9 +98,9 @@ public class ComidaInternacionalActivity extends AppCompatActivity implements Ex
 
                             }
 
-                            mExampleAdaptor = new ExampleAdaptor(ComidaInternacionalActivity.this, mexampleItems);
+                            mExampleAdaptor = new ExampleAdaptor(CrepesPizzeriaActivity.this, mexampleItems);
                             mRecyclerView.setAdapter(mExampleAdaptor);
-                            mExampleAdaptor.setOnClickItemListener(ComidaInternacionalActivity.this );
+                            mExampleAdaptor.setOnClickItemListener(CrepesPizzeriaActivity.this );
 
                         } catch (JSONException e) {
                             e.printStackTrace();

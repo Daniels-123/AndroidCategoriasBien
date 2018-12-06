@@ -14,7 +14,7 @@
         android:padding="16dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/image_view"
+            android:id="@+id/image_view_guia_turistica"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:src="@mipmap/ic_launcher" />
@@ -26,20 +26,16 @@
             android:textAlignment="center">
 
             <TextView
-                android:id="@+id/text_view_creator"
+                android:id="@+id/text_view_creator_guia_turistica"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_gravity="center_horizontal"
                 android:text="Creator Name"
                 android:textColor="@android:color/black"
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/text_view_description"
+                android:id="@+id/text_view_description_guia_turistica"
                 android:layout_width="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
                 android:layout_height="wrap_content"
                 android:text="Like: " />
 

@@ -4,12 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/m"
+
     tools:context=".TiendasRopa.Bebes.BebesActivity">
 
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view_bebes"
         android:layout_width="match_parent"
+        android:backgroundTint="@color/primario"
         android:layout_height="match_parent"
         android:background="@android:color/darker_gray">
 

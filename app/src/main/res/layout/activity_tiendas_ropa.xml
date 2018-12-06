@@ -18,7 +18,7 @@ android:layout_height="match_parent">
             android:layout_height="match_parent"
             android:clickable="false"
             android:baselineAligned="false"
-            android:background="@drawable/m"
+            android:background="@color/primario"
             android:gravity="center_horizontal">
 
             <LinearLayout
@@ -109,7 +109,7 @@ android:layout_height="match_parent">
                     android:layout_height="fill_parent"
 
                     android:layout_weight="1.0"
-                    android:background="?android:selectableItemBackground"
+                    android:background="@drawable/shopping"
                     android:textAllCaps="false" />
 
 

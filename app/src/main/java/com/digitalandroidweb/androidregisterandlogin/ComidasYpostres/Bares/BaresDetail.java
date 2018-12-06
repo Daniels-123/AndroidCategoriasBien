@@ -3,6 +3,8 @@ package com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.Bares;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -44,5 +46,6 @@ public class BaresDetail extends AppCompatActivity {
         textViewDesc.setText(descripcion);
         textViewDire.setText(direccion);
         textViewTel.setText(telefono);
+
     }
 }

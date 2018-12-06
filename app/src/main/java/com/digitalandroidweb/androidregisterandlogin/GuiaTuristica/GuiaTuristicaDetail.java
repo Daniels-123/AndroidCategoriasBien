@@ -1,10 +1,8 @@
-package com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.ComidaChina;
+package com.digitalandroidweb.androidregisterandlogin.GuiaTuristica;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,12 +16,12 @@ import static com.digitalandroidweb.androidregisterandlogin.Dependencias.Depende
 import static com.digitalandroidweb.androidregisterandlogin.Dependencias.DependenciasAdministrativas.EXTRA_URL;
 
 
-public class ComidaChinaDetail extends AppCompatActivity {
+public class GuiaTuristicaDetail extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_comida_china);
+        setContentView(R.layout.activity_detail_guia_turistica);
 
         Intent intent = getIntent();
         String imageUrl = intent.getStringExtra(EXTRA_URL);
@@ -34,11 +32,11 @@ public class ComidaChinaDetail extends AppCompatActivity {
 
         this.setTitle(nombre);
 
-        ImageView imageView = findViewById(R.id.image_view_detail_comida_china);
-        TextView textViewNombre = findViewById(R.id.text_view_nombre_det_comida_china);
-        TextView textViewDesc = findViewById(R.id.text_view_descrip_det_comida_china);
-        TextView textViewDire = findViewById(R.id.text_view_direccion_det_comida_china);
-        TextView textViewTel = findViewById(R.id.text_view_telefono_det_comida_china);
+        ImageView imageView = findViewById(R.id.image_view_detail_guia_turistica);
+        TextView textViewNombre = findViewById(R.id.text_view_nombre_det_guia_turistica);
+        TextView textViewDesc = findViewById(R.id.text_view_descrip_det_guia_turistica);
+        TextView textViewDire = findViewById(R.id.text_view_direccion_det_guia_turistica);
+        TextView textViewTel = findViewById(R.id.text_view_telefono_det_guia_turistica);
 
 
         Picasso.with(this).load(imageUrl).fit().centerInside().into(imageView);
@@ -47,12 +45,5 @@ public class ComidaChinaDetail extends AppCompatActivity {
         textViewDire.setText(direccion);
         textViewTel.setText(telefono);
 
-
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        onBackPressed();
-        return false;
     }
 }

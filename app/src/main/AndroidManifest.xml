@@ -46,6 +46,14 @@
         <activity
             android:name=".ComidasYpostres.ComidaChina.ComidaChinaActivity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ComidasYpostres.CrepesPizzeria.CrepesPizzeriaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ComidasYpostres.CrepesPizzeria.CrepesPizzeriaDetail"
+            android:screenOrientation="portrait" />
+
         <activity
             android:name=".ComidasYpostres.ComidaInternacional.ComidaInternacionalActivity"
             android:screenOrientation="portrait" />
@@ -82,12 +90,21 @@
         <activity android:name=".TiendasRopa.TiendasRopaActivity"
             android:screenOrientation="portrait" />
 
+
         <activity android:name=".TiendasRopa.Bebes.BebesActivity"
             android:screenOrientation="portrait" />
 
 
         <activity android:name=".TiendasRopa.Bebes.BebesDetail"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".GuiaTuristica.GuiaTuristicaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GuiaTuristica.GuiaTuristicaDetail"
+            android:screenOrientation="portrait" />
+
 
 
     </application>

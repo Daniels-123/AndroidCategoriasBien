@@ -2,7 +2,6 @@ package com.digitalandroidweb.androidregisterandlogin.Fragments.Categorias;
 
 import android.app.Fragment;
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -15,6 +14,7 @@ import android.widget.Button;
 
 import com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.ComidasPostresActivity;
 import com.digitalandroidweb.androidregisterandlogin.Dependencias.DependenciasAdministrativas;
+import com.digitalandroidweb.androidregisterandlogin.GuiaTuristica.GuiaTuristicaActivity;
 import com.digitalandroidweb.androidregisterandlogin.R;
 import com.digitalandroidweb.androidregisterandlogin.TiendasRopa.TiendasRopaActivity;
 
@@ -61,6 +61,15 @@ public class Categorias extends Fragment implements NavigationView.OnNavigationI
             public void onClick(View v) {
                     Intent intent = new Intent(getActivity(), DependenciasAdministrativas.class);
                     startActivity(intent);
+            }
+        });
+
+
+        btn13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), GuiaTuristicaActivity.class);
+                startActivity(intent);
             }
         });
 

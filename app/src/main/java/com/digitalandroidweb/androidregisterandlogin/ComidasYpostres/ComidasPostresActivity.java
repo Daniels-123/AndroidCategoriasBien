@@ -14,6 +14,8 @@ import com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.ComidaInter
 import com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.ComidaRapida.ComidaRapidaActivity;
 import com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.ComidaTradicional.ComidaTradicionalActivity;
 import com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.ComidaVegetariana.ComidaVegetarianaActivity;
+import com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.CrepesPizzeria.CrepesPizzeriaActivity;
+import com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.Fruterias.FruteriasActivity;
 import com.digitalandroidweb.androidregisterandlogin.R;
 
 public class ComidasPostresActivity extends AppCompatActivity {
@@ -26,11 +28,13 @@ public class ComidasPostresActivity extends AppCompatActivity {
         setupActionBar();
 
         Button bares = findViewById(R.id.bares);
+        Button fruterias = findViewById(R.id.fruterias);
         Button comidachina= findViewById(R.id.comida_china);
         Button comidainternacional = findViewById(R.id.comida_internacional);
         Button comidarapida = findViewById(R.id.comida_rapida);
         Button comidatradicional = findViewById(R.id.comida_tradicional);
         Button comidavegeta = findViewById(R.id.comida_vegetariana);
+        Button crepespizzeria = findViewById(R.id.crepes_pizzeria);
 
         comidachina.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +70,18 @@ public class ComidasPostresActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ComidasPostresActivity.this, ComidaVegetarianaActivity.class));
+            }
+        });
+        crepespizzeria.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ComidasPostresActivity.this, CrepesPizzeriaActivity.class));
+            }
+        });
+        fruterias.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ComidasPostresActivity.this, FruteriasActivity.class));
             }
         });
 

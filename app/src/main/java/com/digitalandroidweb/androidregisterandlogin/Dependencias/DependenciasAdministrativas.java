@@ -25,6 +25,9 @@ import java.util.ArrayList;
 
 public class DependenciasAdministrativas extends AppCompatActivity implements ExampleAdaptor.OnItemClickListener {
     public static final String EXTRA_URL = "Imagen_1";
+    public static final String EXTRA_URL2 = "Imagen_2";
+    public static final String EXTRA_URL3 = "Imagen_3";
+
     public static final String EXTRA_NOMBRE = "Nombre";
     public static final String EXTRA_DESCRIPTION = "Description";
     public static final String EXTRA_DIRECCION = "Direccion";
@@ -61,7 +64,7 @@ public class DependenciasAdministrativas extends AppCompatActivity implements Ex
 
     private void parseJSON() {
 
-        String url = "http://openfirespark.000webhostapp.com/pruebassql/categorias/cat_12/dependenciasadmin.php";
+        String url = "http://digitalandroidservices.com/api/categorias/cat_12/entidades.php";
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
@@ -75,12 +78,14 @@ public class DependenciasAdministrativas extends AppCompatActivity implements Ex
 
                                 String nombre = hit.getString("Nombre");
                                 String imageurl = hit.getString("Imagen_1");
+                                String imageurl2 = hit.getString("Imagen_2");
+                                String imageurl3 = hit.getString("Imagen_3");
                                 String description = hit.getString("Descripcion");
                                 String direccion= hit.getString("Direccion");
                                 String telefono = hit.getString("Telefono");
 
 
-                                mexampleItems.add(new ExampleItem(imageurl,nombre, description,direccion,telefono));
+                                mexampleItems.add(new ExampleItem(imageurl,imageurl2, imageurl3,nombre, description,direccion,telefono));
 
                             }
 
@@ -111,6 +116,8 @@ public class DependenciasAdministrativas extends AppCompatActivity implements Ex
 
 
         detailIntent.putExtra(EXTRA_URL, clickeditem.getImagen_1());
+        detailIntent.putExtra(EXTRA_URL2, clickeditem.getImagen_2());
+        detailIntent.putExtra(EXTRA_URL3, clickeditem.getImagen_3());
         detailIntent.putExtra(EXTRA_NOMBRE, clickeditem.getNombre());
         detailIntent.putExtra(EXTRA_DESCRIPTION, clickeditem.getDescripcion());
         detailIntent.putExtra(EXTRA_DIRECCION, clickeditem.getDireccion());

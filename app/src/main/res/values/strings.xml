@@ -20,17 +20,19 @@
     <string name="turismo">TURISMO Y DEPORTES</string>
     <string name="dependencias">DEPENDENCIAS ADMINISTRATIVAS</string>
     <string name="dependencias2">Dependencias Administrativas</string>
+    <string name="guia2">Guia Turistica Ibague</string>
     <string name="guia">GUIA TURISTICA</string>
     <string name="bares">Bares</string>
     <string name="Bebes">Tiendas Ropa Bebes</string>
-    <string name="comida_china">Comida China</string>
+    <string name="comida_china">Comida Oriental</string>
     <string name="comida_internacional">Comida Internacional</string>
     <string name="comida_rapida">Comida Rapida</string>
     <string name="comida_tradicional">Comida Tradicional</string>
     <string name="comida_vegetariana">Comida Vegetariana</string>
     <string name="fruterias">Fruterias</string>
     <string name="postres_y_helados">Postres Y Helados</string>
-    <string name="comidas_y_postres">COMIDAS BEBIDAS Y POSTRES</string>
+    <string name="comidas_y_postres">Comidas Licores Rumba</string>
     <string name="tiendas_ropa">Tiendas ropa y accesorios</string>
     <string name="promociones">Promociones</string>
+    <string name="pizzerias">Crepes Pizzerias</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.digitalandroidweb.androidregisterandlogin.Dependencias.Adaptor;
+package com.digitalandroidweb.androidregisterandlogin.GuiaTuristica.Adaptor;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -39,7 +39,7 @@ public class ExampleAdaptor extends RecyclerView.Adapter<ExampleAdaptor.ExampleV
     @NonNull
     @Override
     public ExampleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(mContext).inflate(R.layout.example_item, parent, false);
+        View v = LayoutInflater.from(mContext).inflate(R.layout.example_item_guia_turistica, parent, false);
         return new ExampleViewHolder(v);
     }
 
@@ -48,9 +48,6 @@ public class ExampleAdaptor extends RecyclerView.Adapter<ExampleAdaptor.ExampleV
         ExampleItem currentItem = mExampleList.get(position);
 
         String imageUrl = currentItem.getImagen_1();
-        String imageUrl2 = currentItem.getImagen_2();
-        String imageUrl3 = currentItem.getImagen_3();
-
         String nombre = currentItem.getNombre();
         String direccion = currentItem.getDireccion();
         String descripcion = currentItem.getDescripcion();
@@ -60,7 +57,6 @@ public class ExampleAdaptor extends RecyclerView.Adapter<ExampleAdaptor.ExampleV
         holder.mTextViewCreator.setText(nombre);
         holder.mTextViewDescription.setText(descripcion);
         Picasso.with(mContext).load(imageUrl).fit().centerInside().into(holder.mImageView);
-
 
     }
 
@@ -77,9 +73,9 @@ public class ExampleAdaptor extends RecyclerView.Adapter<ExampleAdaptor.ExampleV
 
         public ExampleViewHolder(View itemView) {
             super(itemView);
-            mImageView = itemView.findViewById(R.id.image_view);
-            mTextViewCreator = itemView.findViewById(R.id.text_view_creator);
-            mTextViewDescription= itemView.findViewById(R.id.text_view_description);
+            mImageView = itemView.findViewById(R.id.image_view_guia_turistica);
+            mTextViewCreator = itemView.findViewById(R.id.text_view_creator_guia_turistica);
+            mTextViewDescription= itemView.findViewById(R.id.text_view_description_guia_turistica);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

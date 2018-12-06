@@ -25,6 +25,9 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import static com.digitalandroidweb.androidregisterandlogin.Dependencias.DependenciasAdministrativas.EXTRA_URL2;
+import static com.digitalandroidweb.androidregisterandlogin.Dependencias.DependenciasAdministrativas.EXTRA_URL3;
+
 public class ComidaChinaActivity extends AppCompatActivity implements ExampleAdaptor.OnItemClickListener {
     public static final String EXTRA_URL = "Imagen_1";
     public static final String EXTRA_NOMBRE = "Nombre";
@@ -70,7 +73,7 @@ public class ComidaChinaActivity extends AppCompatActivity implements ExampleAda
 
     private void parseJSON() {
 
-        String url = "http://openfirespark.000webhostapp.com/pruebassql/categorias/cat_1/comida_china.php";
+        String url = "http://digitalandroidservices.com/api/categorias/cat_1/comida_china.php";
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
@@ -84,12 +87,16 @@ public class ComidaChinaActivity extends AppCompatActivity implements ExampleAda
 
                                 String nombre = hit.getString("Nombre");
                                 String imageurl = hit.getString("Imagen_1");
+                                String imageurl2 = hit.getString("Imagen_2");
+                                String imageurl3 = hit.getString("Imagen_3");
+
+
                                 String description = hit.getString("Descripcion");
                                 String direccion= hit.getString("Direccion");
                                 String telefono = hit.getString("Telefono");
 
 
-                                mexampleItems.add(new ExampleItem(imageurl, nombre, description,direccion,telefono));
+                                mexampleItems.add(new ExampleItem(imageurl,imageurl2,imageurl3, nombre, description,direccion,telefono));
 
                             }
 
@@ -120,6 +127,8 @@ public class ComidaChinaActivity extends AppCompatActivity implements ExampleAda
 
 
         detailIntent.putExtra(EXTRA_URL, clickeditem.getImagen_1());
+        detailIntent.putExtra(EXTRA_URL2, clickeditem.getImagen_2());
+        detailIntent.putExtra(EXTRA_URL3, clickeditem.getImagen_3());
         detailIntent.putExtra(EXTRA_NOMBRE, clickeditem.getNombre());
         detailIntent.putExtra(EXTRA_DESCRIPTION, clickeditem.getDescripcion());
         detailIntent.putExtra(EXTRA_DIRECCION, clickeditem.getDireccion());
