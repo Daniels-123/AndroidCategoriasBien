@@ -100,6 +100,7 @@
                 android:id="@+id/text_view_direccion_det"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:text="Direccion"
                 />
 
