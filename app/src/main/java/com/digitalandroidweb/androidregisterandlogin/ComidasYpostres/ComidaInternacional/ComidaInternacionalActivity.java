@@ -1,9 +1,9 @@
 package com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.ComidaInternacional;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ProgressBar;
@@ -14,7 +14,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.ComidaChina.ComidaChinaActivity;
 import com.digitalandroidweb.androidregisterandlogin.Dependencias.Adaptor.ExampleAdaptor;
 import com.digitalandroidweb.androidregisterandlogin.Dependencias.Adaptor.ExampleItem;
 import com.digitalandroidweb.androidregisterandlogin.Dependencias.DependenciasAdministrativasDetail;
@@ -85,18 +84,18 @@ public class ComidaInternacionalActivity extends AppCompatActivity implements Ex
 
                             for (int i = 0; i < jsonArray.length(); i++){
                                 JSONObject hit = jsonArray.getJSONObject(i);
-
                                 String nombre = hit.getString("Nombre");
                                 String imageurl = hit.getString("Imagen_1");
                                 String imageurl2 = hit.getString("Imagen_2");
                                 String imageurl3 = hit.getString("Imagen_3");
-
                                 String description = hit.getString("Descripcion");
                                 String direccion= hit.getString("Direccion");
                                 String telefono = hit.getString("Telefono");
+                                String latitud = hit.getString("Latitud");
+                                String longitud = hit.getString("Longitud");
 
 
-                                mexampleItems.add(new ExampleItem(imageurl,imageurl2, imageurl3, nombre, description,direccion,telefono));
+                                mexampleItems.add(new ExampleItem(imageurl, imageurl2, imageurl3, nombre, description, direccion, telefono, latitud, longitud));
 
                             }
 

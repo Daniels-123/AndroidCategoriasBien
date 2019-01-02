@@ -84,7 +84,6 @@ public class ComidaTradicionalActivity extends AppCompatActivity implements Exam
 
                             for (int i = 0; i < jsonArray.length(); i++){
                                 JSONObject hit = jsonArray.getJSONObject(i);
-
                                 String nombre = hit.getString("Nombre");
                                 String imageurl = hit.getString("Imagen_1");
                                 String imageurl2 = hit.getString("Imagen_2");
@@ -92,9 +91,11 @@ public class ComidaTradicionalActivity extends AppCompatActivity implements Exam
                                 String description = hit.getString("Descripcion");
                                 String direccion= hit.getString("Direccion");
                                 String telefono = hit.getString("Telefono");
+                                String latitud = hit.getString("Latitud");
+                                String longitud = hit.getString("Longitud");
 
 
-                                mexampleItems.add(new ExampleItem(imageurl,imageurl2, imageurl3, nombre, description,direccion,telefono));
+                                mexampleItems.add(new ExampleItem(imageurl, imageurl2, imageurl3, nombre, description, direccion, telefono, latitud, longitud));
 
                             }
 

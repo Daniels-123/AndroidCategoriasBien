@@ -92,9 +92,10 @@ public class CrepesPizzeriaActivity extends AppCompatActivity implements Example
                                 String description = hit.getString("Descripcion");
                                 String direccion= hit.getString("Direccion");
                                 String telefono = hit.getString("Telefono");
+                                String latitud = hit.getString("Latitud");
+                                String longitud = hit.getString("Longitud");
 
-
-                                mexampleItems.add(new ExampleItem(imageurl,imageurl2, imageurl3, nombre, description,direccion,telefono));
+                                mexampleItems.add(new ExampleItem(imageurl, imageurl2, imageurl3, nombre, description, direccion, telefono, latitud, longitud));
 
                             }
 

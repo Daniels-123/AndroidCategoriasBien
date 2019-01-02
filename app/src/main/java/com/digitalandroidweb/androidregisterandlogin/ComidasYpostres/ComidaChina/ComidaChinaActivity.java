@@ -1,9 +1,9 @@
 package com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.ComidaChina;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ProgressBar;
@@ -89,14 +89,14 @@ public class ComidaChinaActivity extends AppCompatActivity implements ExampleAda
                                 String imageurl = hit.getString("Imagen_1");
                                 String imageurl2 = hit.getString("Imagen_2");
                                 String imageurl3 = hit.getString("Imagen_3");
-
-
                                 String description = hit.getString("Descripcion");
                                 String direccion= hit.getString("Direccion");
                                 String telefono = hit.getString("Telefono");
+                                String latitud = hit.getString("Latitud");
+                                String longitud = hit.getString("Longitud");
 
 
-                                mexampleItems.add(new ExampleItem(imageurl,imageurl2,imageurl3, nombre, description,direccion,telefono));
+                                mexampleItems.add(new ExampleItem(imageurl, imageurl2, imageurl3, nombre, description, direccion, telefono, latitud, longitud));
 
                             }
 

@@ -57,6 +57,9 @@ public class ExampleAdaptor extends RecyclerView.Adapter<ExampleAdaptor.ExampleV
         String telefono = currentItem.getTelefono();
 
 
+        String latitud = currentItem.getLatitud();
+        String longitud = currentItem.getLongitud();
+
         holder.mTextViewCreator.setText(nombre);
         holder.mTextViewDescription.setText(descripcion);
         Picasso.with(mContext).load(imageUrl).fit().centerInside().into(holder.mImageView);

@@ -33,6 +33,10 @@ public class DependenciasAdministrativas extends AppCompatActivity implements Ex
     public static final String EXTRA_DIRECCION = "Direccion";
     public static final String EXTRA_TELEFONO= "Telefono";
 
+    public static final String EXTRA_LONGITUD = "Longitud";
+    public static final String EXTRA_LATITUD = "Latitud";
+
+
 
 
 
@@ -64,7 +68,7 @@ public class DependenciasAdministrativas extends AppCompatActivity implements Ex
 
     private void parseJSON() {
 
-        String url = "http://digitalandroidservices.com/api/categorias/cat_12/entidades.php";
+        String url = "http://digitalandroidservices.com/api/categorias/cat_2/ropa_deportiva.php";
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
@@ -83,9 +87,11 @@ public class DependenciasAdministrativas extends AppCompatActivity implements Ex
                                 String description = hit.getString("Descripcion");
                                 String direccion= hit.getString("Direccion");
                                 String telefono = hit.getString("Telefono");
+                                String latitud = hit.getString("Latitud");
+                                String longitud = hit.getString("Longitud");
 
 
-                                mexampleItems.add(new ExampleItem(imageurl,imageurl2, imageurl3,nombre, description,direccion,telefono));
+                                mexampleItems.add(new ExampleItem(imageurl, imageurl2, imageurl3, nombre, description, direccion, telefono, latitud, longitud));
 
                             }
 
@@ -122,6 +128,8 @@ public class DependenciasAdministrativas extends AppCompatActivity implements Ex
         detailIntent.putExtra(EXTRA_DESCRIPTION, clickeditem.getDescripcion());
         detailIntent.putExtra(EXTRA_DIRECCION, clickeditem.getDireccion());
         detailIntent.putExtra(EXTRA_TELEFONO, clickeditem.getTelefono());
+        detailIntent.putExtra(EXTRA_LATITUD, clickeditem.getLatitud());
+        detailIntent.putExtra(EXTRA_LONGITUD, clickeditem.getLongitud());
 
 
 

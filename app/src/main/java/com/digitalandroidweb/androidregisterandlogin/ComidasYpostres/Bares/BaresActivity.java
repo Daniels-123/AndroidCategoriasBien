@@ -1,9 +1,9 @@
 package com.digitalandroidweb.androidregisterandlogin.ComidasYpostres.Bares;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ProgressBar;
@@ -16,7 +16,6 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.digitalandroidweb.androidregisterandlogin.Dependencias.Adaptor.ExampleAdaptor;
 import com.digitalandroidweb.androidregisterandlogin.Dependencias.Adaptor.ExampleItem;
-import com.digitalandroidweb.androidregisterandlogin.Dependencias.DependenciasAdministrativas;
 import com.digitalandroidweb.androidregisterandlogin.Dependencias.DependenciasAdministrativasDetail;
 import com.digitalandroidweb.androidregisterandlogin.R;
 
@@ -26,16 +25,18 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import static com.digitalandroidweb.androidregisterandlogin.Dependencias.DependenciasAdministrativas.EXTRA_URL2;
-import static com.digitalandroidweb.androidregisterandlogin.Dependencias.DependenciasAdministrativas.EXTRA_URL3;
-
 public class BaresActivity extends AppCompatActivity implements ExampleAdaptor.OnItemClickListener {
     public static final String EXTRA_URL = "Imagen_1";
+    public static final String EXTRA_URL2 = "Imagen_2";
+    public static final String EXTRA_URL3 = "Imagen_3";
+
     public static final String EXTRA_NOMBRE = "Nombre";
     public static final String EXTRA_DESCRIPTION = "Description";
     public static final String EXTRA_DIRECCION = "Direccion";
     public static final String EXTRA_TELEFONO= "Telefono";
 
+    public static final String EXTRA_LONGITUD = "Longitud";
+    public static final String EXTRA_LATITUD = "Latitud";
 
 
 
@@ -85,18 +86,18 @@ public class BaresActivity extends AppCompatActivity implements ExampleAdaptor.O
 
                             for (int i = 0; i < jsonArray.length(); i++){
                                 JSONObject hit = jsonArray.getJSONObject(i);
-
                                 String nombre = hit.getString("Nombre");
                                 String imageurl = hit.getString("Imagen_1");
                                 String imageurl2 = hit.getString("Imagen_2");
                                 String imageurl3 = hit.getString("Imagen_3");
-
                                 String description = hit.getString("Descripcion");
                                 String direccion= hit.getString("Direccion");
                                 String telefono = hit.getString("Telefono");
+                                String latitud = hit.getString("Latitud");
+                                String longitud = hit.getString("Longitud");
 
 
-                                mexampleItems.add(new ExampleItem(imageurl,imageurl2,imageurl3, nombre, description,direccion,telefono));
+                                mexampleItems.add(new ExampleItem(imageurl, imageurl2, imageurl3, nombre, description, direccion, telefono, latitud, longitud));
 
                             }
 
@@ -124,19 +125,15 @@ public class BaresActivity extends AppCompatActivity implements ExampleAdaptor.O
     public void onItemClick(int position) {
         Intent detailIntent = new Intent(this, DependenciasAdministrativasDetail.class);
         ExampleItem clickeditem =mexampleItems.get(position);
-
-
         detailIntent.putExtra(EXTRA_URL, clickeditem.getImagen_1());
         detailIntent.putExtra(EXTRA_URL2, clickeditem.getImagen_2());
         detailIntent.putExtra(EXTRA_URL3, clickeditem.getImagen_3());
-
         detailIntent.putExtra(EXTRA_NOMBRE, clickeditem.getNombre());
         detailIntent.putExtra(EXTRA_DESCRIPTION, clickeditem.getDescripcion());
         detailIntent.putExtra(EXTRA_DIRECCION, clickeditem.getDireccion());
         detailIntent.putExtra(EXTRA_TELEFONO, clickeditem.getTelefono());
-
-
-
+        detailIntent.putExtra(EXTRA_LATITUD, clickeditem.getLatitud());
+        detailIntent.putExtra(EXTRA_LONGITUD, clickeditem.getLongitud());
         startActivity(detailIntent);
     }
 }

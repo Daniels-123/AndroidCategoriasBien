@@ -35,4 +35,6 @@
     <string name="tiendas_ropa">Tiendas ropa y accesorios</string>
     <string name="promociones">Promociones</string>
     <string name="pizzerias">Crepes Pizzerias</string>
+    <string name="title_activity_maps_comidas">Map</string>
+    <string name="title_activity_maps2">Map</string>
 </resources>
